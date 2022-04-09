@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="signup.html">signup</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <img
+        id="batata"
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+      />
+    </ul>
+
+    <form>
+      <label for="">First name</label>
+      <input type="text" />
+      <label for="">Last name</label>
+      <input type="text" />
+      <label for="">password</label>
+      <input type="password" />
+      <label for="">Email or number phone</label>
+      <input type="text" />
+      <input id="mypic" type="file" onchange="ChangePic()" />
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      function ChangePic() {
+        var newPic = document.getElementById("mypic").files[0].name;
+        document.getElementById("batata").src = newPic;
+      }
+    </script>
+  </body>
+</html>
