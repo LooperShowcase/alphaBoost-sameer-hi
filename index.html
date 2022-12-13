@@ -5,18 +5,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="signup.html">signup</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/Netflix">wikipedia</a></li>
-      <li><a href="#about">About</a></li>
-      <li>
-        <script>
-          function changeBG() {
-            var newColor = document.getElementById("colorPicker").value;
-            document.body.style.background = newColor;
-          }
-        </script>
+    <ul id="navbar-main">
+      <li id="navbar"><a class="active" href="index.html">Home</a></li>
+      <li id="navbar"><a href="signup.html">signup</a></li>
+      <li id="navbar">
+        <a href="https://en.wikipedia.org/wiki/Netflix">wikipedia</a>
+      </li>
+      <li id="navbar"><a href="#about">About</a></li>
+      <li id="navbar"><a href="signin.html">signin</a></li>
+      <li id="navbar">
+        <button onclick="changeText()">Click here</button>
+        <button onclick="changeBackground()">change to blue</button>
+
+        <h1 id="first">hello</h1>
+        <script src="script.js"></script>
+        <script src="script.js"></script>
       </li>
       <li>
         <img
@@ -26,6 +29,8 @@
       </li>
     </ul>
     <input type="color" id="colorPicker" onchange="changeBG()" />
+    <input type="color" id="colorPicker" onchange="changeBGC()" />
+    <input onchange="" type="file" name="" id="upload" />
     <div id="MyBox"></div>
     <center>
       <h1>netflix</h1>
@@ -75,14 +80,34 @@
         syndication, merchandising, etc.) on big hits.[35][36]
       </p>
     </center>
-    <footer>
-      <p>welcome to my website</p>
-    </footer>
-    <script>
-      function changeBG() {
-        var newColor = document.getElementById("colorPicker").value;
-        document.body.style.background = newColor;
-      }
-    </script>
+
+    <script src="script.js"></script>
+    <iframe
+      width="1280"
+      height="720"
+      src="https://www.youtube.com/embed/yuVQJFF7l5w"
+      title="How Netflix Started, Grew And Became A $116 Billion Company"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <ul id="addedtext">
+      <li>bread</li>
+      <li>tomato</li>
+    </ul>
+    <div class="grid-container">
+      <div class="grid-item"><img src="" alt="" /></div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+    ​
+    <input type="text" id="list" />
+    <button onclick="addtolist()">Add</button>
   </body>
 </html>

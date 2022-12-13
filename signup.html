@@ -8,14 +8,15 @@
     <ul>
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="signup.html">signup</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#https://en.wikipedia.org/wiki/Netflix">wikipedia</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="signin.html">signin</a></li>
       <img
         id="batata"
         src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
       />
     </ul>
-
+    <script src="script.js"></script>
     <form>
       <label for="">First name</label>
       <input type="text" />
@@ -28,11 +29,8 @@
       <input id="mypic" type="file" onchange="ChangePic()" />
       <input type="submit" value="Submit" />
     </form>
-    <script>
-      function ChangePic() {
-        var newPic = document.getElementById("mypic").files[0].name;
-        document.getElementById("batata").src = newPic;
-      }
-    </script>
+    <script src="script.js">  </script>
+    <input type="color" id="colorPicker" onchange="changeBG()" />
   </body>
+  <script src="script.js"></script>
 </html>
